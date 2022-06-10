@@ -574,40 +574,8 @@ body {
 }
 /*особливості*/
 /*прихований заголовок*/
-.icon-background {
-  height: 120px;
-  background-color: var(--background-light-icon);
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-}
 
-.icon-svg {
-  width: 70px;
-  height: 70px;
-}
-
-.container-specifics {
-  display: flex;
-  align-items: center;
-  margin: 0px 0px;
-}
-
-.list-specifics.container-specifics {
-  padding: 0;
-}
-
-.box-specifics {
-  margin-right: 30px;
-}
-
-.box-specifics:last-child {
-  margin-right: 0;
-}
-
-.specifics {
+.visually-hidden {
   color: var(--background-color);
   position: absolute;
   width: 1px;
@@ -620,14 +588,21 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/*Особенности*/
 
-/*прибрані кнопки*/
-.list-specifics {
-  list-style: none;
+.features__item {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin: 0px 0px;
 }
 
-.list-work {
-  list-style: none;
+.features__list--position {
+  margin-right: 30px;
+}
+
+.features__list--position:last-child {
+  margin-right: 0;
 }
 
 /*заголовки*/
@@ -647,7 +622,7 @@ body {
 }
 
 /*абзац особливостей*/
-.description-advantage {
+.advantage__description {
   margin-top: 0;
   margin-bottom: 0;
   width: 270px;
@@ -662,9 +637,27 @@ body {
 
   color: var(--primary-text-color);
 }
+.icon__container {
+  height: 120px;
+  background-color: var(--background-light-icon);
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.icon__svg {
+  width: 70px;
+  height: 70px;
+}
 
 /*чим займаємося*/
-.work {
+.section__container {
+  padding-top: 0;
+}
+
+.heading {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -677,11 +670,9 @@ body {
   color: var(--primary-text-second-color);
 }
 
-.work-img-li :last-child {
-  margin-right: 0;
-}
 
-.work-img {
+
+.product {
   margin: 0;
   padding: 0;
   display: flex;
@@ -689,23 +680,23 @@ body {
   list-style: none;
 }
 
-.work-img-li {
+.product__list {
   position: relative;
   padding: 0;
   margin: 0px 30px 0px 0px;
 }
 
-.work-img-li:last-child {
+.product__list:last-child {
   margin-right: 0;
 }
 
-.work-img-foto {
+.product__img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
-.work-text {
+.product__text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -730,10 +721,6 @@ body {
 /*команда*/
 .our-team {
   background: #f5f4fa;
-}
-
-.section-container {
-  padding-top: 0;
 }
 
 .work-team {
@@ -876,7 +863,7 @@ body {
 }
 
 /* клиенти */
-.clients {
+.clients__text {
   margin: 0px 0px 50px 0px;
   font-family: 'Roboto';
   font-style: normal;
@@ -889,7 +876,7 @@ body {
   color: var(--primary-text-second-color);
 }
 
-.clients-ul {
+.clients__content {
   margin: 0;
   padding: 0;
   display: flex;
@@ -897,45 +884,45 @@ body {
   align-items: center;
 }
 
-.clients-li:not(:last-child) {
+.clients__list:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-a:hover {
+.clients__link:hover {
   border-color: var(--accent-color);
   border-radius: 4px;
 }
 
-.clients-a:focus {
+.clients__link:focus {
   border-color: var(--accent-color);
   border-radius: 4px;
 }
 
-.clients-a:hover .clients-logo {
+.clients__link:hover .clients__logo {
   fill: var(--accent-color);
 }
 
-.clients-a.clients-logo {
+clients__link.clients__logo {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-a:focus .clients-logo {
+.clients__link:focus .clients__logo {
   fill: var(--accent-color);
 }
 
-.clients-logo:hover {
+.clients__logo:hover {
   fill: var(--accent-color);
 }
 
-.clients-li {
+.clients__list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.clients-logo {
+.clients__logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -948,7 +935,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-a {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
