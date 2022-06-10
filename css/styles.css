@@ -282,7 +282,14 @@ body {
 }
 
 /* секція для замовлення послуги */
-.section-n.section {
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: auto;
+}
+
+.section--background {
+  background: var(--background-second-color);
   padding-top: 200px;
   padding-bottom: 200px;
   height: 600px;
@@ -293,24 +300,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin: auto;
-}
-
-.section-div {
+.hero__container {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.section-n {
-  background: var(--background-second-color);
-}
-
-.section-title {
+.hero__title {
   margin: 0 auto;
   max-width: 696px;
   margin-top: 0;
@@ -529,17 +525,7 @@ body {
   margin-top: 0px;
   margin-bottom: 30px;
 }
-/*.custome-checkbox {
-  margin-right: 7px;
-  width: 16px;
-  height: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;  
-  border: var(--primary-text-second-color);
-}
-*/
+
 .custome-icon {
   display: inline-block;
   width: 16px;
